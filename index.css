@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background:#7b68ee; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #00001f;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left,
+.right {
+  width: 15%;
+}
+
+.middle {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 300;
+  color: #00b8b8;
+  font-family: 'Times New Roman';
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #00b8b8;
+  font-family: 'Times New Roman';
+}
+
+h3 {
+  font-size: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 2px;
+  border: 2px solid black;
+  background-color: #a8dadc;
+  padding: 1px;
+  margin: 15px;
+}
+
+.grid-container > div {
+  background-color: rgb(33, 37, 41);
+  text-align: center;
+  font-size: 30px;
+}
+
+.item1 {
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 80vh;
+}
+
+#chartContainer {
+  background: rgb(33, 37, 41);
+}
+
+.item2 {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  height: 80vh;
+  background: #212529;
+}
+
+.arrow {
+  color: white;
+  margin: 10px 0;
+}
+.btn-1 {
+  align-items: center;
+  background: #7b68ee;
+  border-radius: 200px;
+  color: #0b0c10;
+  display: flex;
+  font-size: 14px;
+  height: 40px;
+  justify-content: center;
+  margin: 10px 5px;
+  width: 120px;
+}
+
+.btn-2 {
+  align-items: center;
+  background: #aeaaca;
+  border-radius: 200px;
+  color: #0b0c10;
+  display: flex;
+  font-size: 14px;
+  height: 40px;
+  justify-content: center;
+  margin: 10px 5px;
+  width: 120px;
+}
+
+.disFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#minmax {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#buttoncss {
+  display: flex;
+  margin: auto;
+  width: 50%;
+  font-size: 10px;
+}
+
+#currConv-2{
+  width: 85%;
+  height: 25px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+input, textarea{
+  width: 85%;
+  height: 25px;
+  border: 2px solid black;
+  font-size: 14px;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+}
+
+hr {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 70%;
+  height: 15px;
+  margin: auto;
+  margin-top: 10px;
+  background: rgb(255,0,0);
+background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,255,12,1) 100%);
+}
+
+#calbtn {
+  margin-top: 15px;
+}
+/* 
+#cal{
+    width: 80px;
+    padding: 2px;
+    height: 45px;
+    font-size: 15px;
+} */
+
+#year_list {
+  width: 85%;
+  padding: 2px;
+  height: 25px;
+  font-size: 15px;
+}
+
+div.ex1 {
+  position: relative;
+  left: 20px;
+  background-color: rgb(33, 37, 41);
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 80vh;
+  width: 190px;
+  overflow-y: scroll;
+  border-color: white;
+  color: white;
+  font-size: 0.11px;
+}
+
+/* Float four columns side by side */
+.row2 {
+  float: left;
+  width: 100%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.column2 {
+  margin: 0 - 1px;
+}
+
+/* Clear floats after the columns */
+.column2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .row2 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+
+  border-bottom: 2px solid white;
+
+  padding: 16px;
+  margin: 5px 0;
+  text-align: center;
+  font-size: 0.02px;
+  background-color: #212529;
+  color: white;
+}

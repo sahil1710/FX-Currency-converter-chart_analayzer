@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link href="index.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="/data/js/data.js"></script>
+  </head>
+
+  <body>
+    <h1>Currency Exchange Rate</h1>
+
+    <!-- <div class="row">
+      <div class="column left">
+        <div class="card">
+          <h3>Card 1</h3>
+          <p>Some text</p>
+          <p>Some text</p>
+        </div>
+      </div> -->
+
+      <div class="row">
+        <div class="column left">
+          <div class="ex1">
+            <div class="row2" id="row2">
+              <div class="column2">
+                <div class="card">
+                  <h3 id="er1">Australian dollar (AUD)</h3>
+                </div>
+              </div>
+    
+              <div class="column2">
+                <div class="card">
+                  <h3 id="er2">Australian dollar (AUD)</h3>
+                </div>
+              </div>
+    
+              <div class="column2">
+                <div class="card">
+                  <h3 id="er3">Australian dollar (AUD)</h3>
+                </div>
+              </div>
+    
+              <div class="column2">
+                <div class="card">
+                  <h3 id="er4">Australian dollar (AUD)</h3>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div class="column middle">
+        <div class="item1">
+          <div id="chartContainer" style="height: 100%; width: 100%"></div>
+        </div>
+        <div id="buttoncss">
+          <button id="btn1" class="btn-1" onclick="createPlot()">Daily</button>
+          <button id="btn2" class="btn-2" onclick="weeklyPlot()">Weekly</button>
+          <button id="btn3" class="btn-2" onclick="monthlyPlot()">Monthly</button>
+          <button id="btn4" class="btn-2" onclick="quarterlyPlot()">Quaterly</button>
+          <button id="btn5" class="btn-2" onclick="yearlyPlot()">Yearly</button>
+        </div>
+      </div>
+
+      <div class="column right">
+        <div class="item2">
+          <div>
+            <div class="disFlex">
+              <div>
+                <label for="currency_1" style="color: white">From</label>
+              </div>
+              <input
+                list="currencyList1"
+                name="currency_1"
+                id="currency_1"
+                value="U.S. dollar   (USD)"
+                class="currency_list"
+                onfocus="this.value=''" onchange="this.blur();"
+              />
+              <datalist id="currencyList1">
+                <option value="Algerian dinar   (DZD)">
+                  Algerian dinar (DZD)
+                </option>
+                <option value="Australian dollar   (AUD)">
+                  Australian dollar (AUD)
+                </option>
+                <option value="Bahrain dinar   (BHD)">
+                  Bahrain dinar (BHD)
+                </option>
+                <option value="Bolivar Fuerte   (VEF)">
+                  Bolivar Fuerte (VEF)
+                </option>
+                <option value="Botswana pula   (BWP)">
+                  Botswana pula (BWP)
+                </option>
+                <option value="Brazilian real   (BRL)">
+                  Brazilian real (BRL)
+                </option>
+                <option value="Brunei dollar   (BND)">
+                  Brunei dollar (BND)
+                </option>
+                <option value="Canadian dollar   (CAD)">
+                  Canadian dollar (CAD)
+                </option>
+                <option value="Chilean peso   (CLP)">Chilean peso (CLP)</option>
+                <option value="Chinese yuan   (CNY)">Chinese yuan (CNY)</option>
+                <option value="Colombian peso   (COP)">
+                  Colombian peso (COP)
+                </option>
+                <option value="Czech koruna   (CZK)">Czech koruna (CZK)</option>
+                <option value="Danish krone   (DKK)">Danish krone (DKK)</option>
+                <option value="Euro   (EUR)">Euro (EUR)</option>
+                <option value="Hungarian forint   (HUF)">
+                  Hungarian forint (HUF)
+                </option>
+                <option value="Icelandic krona   (ISK)">
+                  Icelandic krona (ISK)
+                </option>
+                <option value="Indian rupee   (INR)">Indian rupee (INR)</option>
+                <option value="Indonesian rupiah   (IDR)">
+                  Indonesian rupiah (IDR)
+                </option>
+                <option value="Iranian rial   (IRR)">Iranian rial (IRR)</option>
+                <option value="Israeli New Shekel   (ILS)">
+                  Israeli New Shekel (ILS)
+                </option>
+                <option value="Japanese yen   (JPY)">Japanese yen (JPY)</option>
+                <option value="Kazakhstani tenge   (KZT)">
+                  Kazakhstani tenge (KZT)
+                </option>
+                <option value="Korean won   (KRW)">Korean won (KRW)</option>
+                <option value="Kuwaiti dinar   (KWD)">
+                  Kuwaiti dinar (KWD)
+                </option>
+                <option value="Libyan dinar   (LYD)">Libyan dinar (LYD)</option>
+                <option value="Malaysian ringgit   (MYR)">
+                  Malaysian ringgit (MYR)
+                </option>
+                <option value="Mauritian rupee   (MUR)">
+                  Mauritian rupee (MUR)
+                </option>
+                <option value="Mexican peso   (MXN)">Mexican peso (MXN)</option>
+                <option value="Nepalese rupee   (NPR)">
+                  Nepalese rupee (NPR)
+                </option>
+                <option value="New Zealand dollar   (NZD)">
+                  New Zealand dollar (NZD)
+                </option>
+                <option value="Norwegian krone   (NOK)">
+                  Norwegian krone (NOK)
+                </option>
+                <option value="Omani rial   (OMR)">Omani rial (OMR)</option>
+                <option value="Pakistani rupee   (PKR)">
+                  Pakistani rupee (PKR)
+                </option>
+                <option value="Peruvian sol   (PEN)">Peruvian sol (PEN)</option>
+                <option value="Philippine peso   (PHP)">
+                  Philippine peso (PHP)
+                </option>
+                <option value="Polish zloty   (PLN)">Polish zloty (PLN)</option>
+                <option value="Qatari riyal   (QAR)">Qatari riyal (QAR)</option>
+                <option value="Russian ruble   (RUB)">
+                  Russian ruble (RUB)
+                </option>
+                <option value="Saudi Arabian riyal   (SAR)">
+                  Saudi Arabian riyal (SAR)
+                </option>
+                <option value="Singapore dollar   (SGD)">
+                  Singapore dollar (SGD)
+                </option>
+                <option value="South African rand   (ZAR)">
+                  South African rand (ZAR)
+                </option>
+                <option value="Sri Lankan rupee   (LKR)">
+                  Sri Lankan rupee (LKR)
+                </option>
+                <option value="Swedish krona   (SEK)">
+                  Swedish krona (SEK)
+                </option>
+                <option value="Swiss franc   (CHF)">Swiss franc (CHF)</option>
+                <option value="Thai baht   (THB)">Thai baht (THB)</option>
+                <option value="Trinidadian dollar   (TTD)">
+                  Trinidadian dollar (TTD)
+                </option>
+                <option value="Tunisian dinar   (TND)">
+                  Tunisian dinar (TND)
+                </option>
+                <option value="U.A.E. dirham   (AED)">
+                  U.A.E. dirham (AED)
+                </option>
+                <option value="U.K. pound   (GBP)">U.K. pound (GBP)</option>
+                <option value="U.S. dollar   (USD)">U.S. dollar (USD)</option>
+                <option value="Uruguayan peso   (UYU)">
+                  Uruguayan peso (UYU)
+                </option>
+              </datalist>
+            </div>
+            <div class="disFlex arrow" s>
+              <i class="fa fa-arrow-down"></i>
+            </div>
+
+            <div class="disFlex">
+              <div>
+                <label for="currency_2" style="color: white">To</label>
+              </div>
+              <input
+                list="currencyList2"
+                name="currency_2"
+                id="currency_2"
+                value="Indian rupee   (INR)"
+                class="currency_list"
+
+                onfocus="this.value=''" onchange="this.blur();"
+              />
+              <datalist id="currencyList2">
+                <option value="Algerian dinar   (DZD)">
+                  Algerian dinar (DZD)
+                </option>
+                <option value="Australian dollar   (AUD)">
+                  Australian dollar (AUD)
+                </option>
+                <option value="Bahrain dinar   (BHD)">
+                  Bahrain dinar (BHD)
+                </option>
+                <option value="Bolivar Fuerte   (VEF)">
+                  Bolivar Fuerte (VEF)
+                </option>
+                <option value="Botswana pula   (BWP)">
+                  Botswana pula (BWP)
+                </option>
+                <option value="Brazilian real   (BRL)">
+                  Brazilian real (BRL)
+                </option>
+                <option value="Brunei dollar   (BND)">
+                  Brunei dollar (BND)
+                </option>
+                <option value="Canadian dollar   (CAD)">
+                  Canadian dollar (CAD)
+                </option>
+                <option value="Chilean peso   (CLP)">Chilean peso (CLP)</option>
+                <option value="Chinese yuan   (CNY)">Chinese yuan (CNY)</option>
+                <option value="Colombian peso   (COP)">
+                  Colombian peso (COP)
+                </option>
+                <option value="Czech koruna   (CZK)">Czech koruna (CZK)</option>
+                <option value="Danish krone   (DKK)">Danish krone (DKK)</option>
+                <option value="Euro   (EUR)">Euro (EUR)</option>
+                <option value="Hungarian forint   (HUF)">
+                  Hungarian forint (HUF)
+                </option>
+                <option value="Icelandic krona   (ISK)">
+                  Icelandic krona (ISK)
+                </option>
+                <option value="Indian rupee   (INR)">Indian rupee (INR)</option>
+                <option value="Indonesian rupiah   (IDR)">
+                  Indonesian rupiah (IDR)
+                </option>
+                <option value="Iranian rial   (IRR)">Iranian rial (IRR)</option>
+                <option value="Israeli New Shekel   (ILS)">
+                  Israeli New Shekel (ILS)
+                </option>
+                <option value="Japanese yen   (JPY)">Japanese yen (JPY)</option>
+                <option value="Kazakhstani tenge   (KZT)">
+                  Kazakhstani tenge (KZT)
+                </option>
+                <option value="Korean won   (KRW)">Korean won (KRW)</option>
+                <option value="Kuwaiti dinar   (KWD)">
+                  Kuwaiti dinar (KWD)
+                </option>
+                <option value="Libyan dinar   (LYD)">Libyan dinar (LYD)</option>
+                <option value="Malaysian ringgit   (MYR)">
+                  Malaysian ringgit (MYR)
+                </option>
+                <option value="Mauritian rupee   (MUR)">
+                  Mauritian rupee (MUR)
+                </option>
+                <option value="Mexican peso   (MXN)">Mexican peso (MXN)</option>
+                <option value="Nepalese rupee   (NPR)">
+                  Nepalese rupee (NPR)
+                </option>
+                <option value="New Zealand dollar   (NZD)">
+                  New Zealand dollar (NZD)
+                </option>
+                <option value="Norwegian krone   (NOK)">
+                  Norwegian krone (NOK)
+                </option>
+                <option value="Omani rial   (OMR)">Omani rial (OMR)</option>
+                <option value="Pakistani rupee   (PKR)">
+                  Pakistani rupee (PKR)
+                </option>
+                <option value="Peruvian sol   (PEN)">Peruvian sol (PEN)</option>
+                <option value="Philippine peso   (PHP)">
+                  Philippine peso (PHP)
+                </option>
+                <option value="Polish zloty   (PLN)">Polish zloty (PLN)</option>
+                <option value="Qatari riyal   (QAR)">Qatari riyal (QAR)</option>
+                <option value="Russian ruble   (RUB)">
+                  Russian ruble (RUB)
+                </option>
+                <option value="Saudi Arabian riyal   (SAR)">
+                  Saudi Arabian riyal (SAR)
+                </option>
+                <option value="Singapore dollar   (SGD)">
+                  Singapore dollar (SGD)
+                </option>
+                <option value="South African rand   (ZAR)">
+                  South African rand (ZAR)
+                </option>
+                <option value="Sri Lankan rupee   (LKR)">
+                  Sri Lankan rupee (LKR)
+                </option>
+                <option value="Swedish krona   (SEK)">
+                  Swedish krona (SEK)
+                </option>
+                <option value="Swiss franc   (CHF)">Swiss franc (CHF)</option>
+                <option value="Thai baht   (THB)">Thai baht (THB)</option>
+                <option value="Trinidadian dollar   (TTD)">
+                  Trinidadian dollar (TTD)
+                </option>
+                <option value="Tunisian dinar   (TND)">
+                  Tunisian dinar (TND)
+                </option>
+                <option value="U.A.E. dirham   (AED)">
+                  U.A.E. dirham (AED)
+                </option>
+                <option value="U.K. pound   (GBP)">U.K. pound (GBP)</option>
+                <option value="U.S. dollar   (USD)">U.S. dollar (USD)</option>
+                <option value="Uruguayan peso   (UYU)">
+                  Uruguayan peso (UYU)
+                </option>
+              </datalist>
+            </div>
+          </div>
+          <div class="disFlex" id="year_li">
+            <label for="year_list" style="color: white;"
+              >Year</label
+            >
+            <select id="year_list" style="text-align: center;
+            border-radius: 5px;">
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+            </select>
+            <span style="color:red; font-size: 10px;" id="error"></span>
+          </div>
+          <div class="disFlex">
+            <button id="cal" class="btn-1" onclick="createPlot()">Enter</button>
+          </div>
+
+          <div class="baar">
+            <hr />
+          </div>
+          <div id="minmax">
+            <div id="min" style="color: white">Min</div>
+            <div id="max" style="color: white">Max</div>
+          </div>
+
+          <center><h2>Currency Converter:</h2></center>
+          <div>
+            <div class="disFlex">
+              <div>
+                <label for="currency_1" style="color: white"
+                  >Currency-1 Amount:</label
+                >
+              </div>
+              <input
+                type="number"
+                name="currency_1"
+                id="currConv-1"
+                class="currency_list"
+              />
+            </div>
+
+            <div class="disFlex arrow" s>
+              <i class="fa fa-arrow-down"></i>
+            </div>
+
+            <div class="disFlex">
+              <div>
+                <label for="currConv-2" style="color: white;"
+                  >Amount in currency-2:</label
+                >
+              </div>
+              <div name="converted" id="currConv-2" ></div>
+            </div>
+
+            <div class="disFlex">
+              <button id="cal" class="btn-1" onclick="currencyConverter()">Convert</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="data/js/exchangeRate.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
