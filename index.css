@@ -4,13 +4,11 @@
   border-radius: 5px;
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background:#7b68ee; 
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
@@ -20,11 +18,10 @@ body {
   background-color: #00001f;
 }
 
-/* Create three unequal columns that floats next to each other */
 .column {
   float: left;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 300px; 
 }
 
 .left,
@@ -36,14 +33,12 @@ body {
   width: 70%;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive columns */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -51,8 +46,6 @@ body {
     margin-bottom: 20px;
   }
 }
-
-/* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
@@ -196,13 +189,6 @@ background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,255,12,1) 100%);
 #calbtn {
   margin-top: 15px;
 }
-/* 
-#cal{
-    width: 80px;
-    padding: 2px;
-    height: 45px;
-    font-size: 15px;
-} */
 
 #year_list {
   width: 85%;
@@ -225,26 +211,22 @@ div.ex1 {
   font-size: 0.11px;
 }
 
-/* Float four columns side by side */
 .row2 {
   float: left;
   width: 100%;
   padding: 0 10px;
 }
 
-/* Remove extra left and right margins, due to padding */
 .column2 {
   margin: 0 - 1px;
 }
 
-/* Clear floats after the columns */
 .column2:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive columns */
 @media screen and (max-width: 600px) {
   .row2 {
     width: 100%;
@@ -253,11 +235,9 @@ div.ex1 {
   }
 }
 
-/* Style the counter cards */
 .card {
 
   border-bottom: 2px solid white;
-
   padding: 16px;
   margin: 5px 0;
   text-align: center;
