@@ -188,8 +188,6 @@ function createPlot() {
   document.getElementById("max").innerHTML = `<span><center>${parseFloat(
     minmax["max"]
   ).toFixed(2)}</center>${maxdate}</span>`;
-  //   document.getElementById("min").innerHTML = minObj["min"] + " " + minObj["Date"]
-  //   document.getElementById("max").innerHTML = maxObj["max"] + " " + maxObj["Date"]
 
   lineChart(currency_1, currency_2);
 }
@@ -383,7 +381,6 @@ function yearlyPlot() {
     }
     temp["y"] = ans / allYearData[i].length;
 
-    // temp["y"]=allYearData[i][0][str];
     console.log(temp["x"], temp["y"]);
     data.push(temp);
   }
@@ -451,8 +448,6 @@ function exchangeR()
   console.log(year);
   let temp;
   temp = exchangeRate[year];
-  // console.log(temp[0]["Algerian dinar   (DZD)"]);
-  // console.log(Object.keys(temp[0]).length);
 
   card = document.getElementById('row2')
   individual=card.children[0]
@@ -462,7 +457,7 @@ function exchangeR()
 
   for (const item in temp[0]) {
     if(i>4){
-    // clone1=individual.children[0].children[0].cloneNode(true);
+      
     clone=individual.children[0].cloneNode(true);
     console.log(clone);
     clone.children[0].id='er'+i;
