@@ -233,14 +233,7 @@ function monthlyPlot() {
     
     i++;
   });
-  temp["x"] = new Date(
-    parseInt("20" + tempData[tempData.length - 1]["Date"].split("-")[2]),
-    parseInt(month[tempData[tempData.length - 1]["Date"].split("-")[1]]),
-    parseInt(tempData[tempData.length - 1]["Date"].split("-")[0])
-  );
-  temp["y"] = tempData[tempData.length - 1][currency_2];
-  data.push(temp);
-  console.log(data);
+  
   lineChart(currency_1, currency_2);
 }
 
@@ -286,14 +279,6 @@ function weeklyPlot() {
     i++;
   });
   
-  temp["x"] = new Date(
-    parseInt("20" + tempData[tempData.length - 1]["Date"].split("-")[2]),
-    parseInt(month[tempData[tempData.length - 1]["Date"].split("-")[1]]),
-    parseInt(tempData[tempData.length - 1]["Date"].split("-")[0])
-  );
-  temp["y"] = tempData[tempData.length - 1][currency_2];
-  data.push(temp);
-  console.log(data);
   lineChart(currency_1, currency_2);
 }
 
@@ -337,17 +322,7 @@ function quarterlyPlot() {
     i++;
     ans += item[currency_2] / item[currency_1];
   });
-
-  temp["x"] = new Date(
-    parseInt("20" + tempData[tempData.length - 1]["Date"].split("-")[2]),
-    parseInt(month[tempData[tempData.length - 1]["Date"].split("-")[1]]),
-    parseInt(tempData[tempData.length - 1]["Date"].split("-")[0])
-  );
-
-  temp["y"] = tempData[tempData.length - 1][currency_2];
-  data.push(temp);
-
-  console.log(data);
+  
   lineChart(currency_1, currency_2);
 }
 
@@ -385,7 +360,6 @@ function yearlyPlot() {
     data.push(temp);
   }
 
-  console.log(data);
   lineChart(currency_1, currency_2);
 }
 
