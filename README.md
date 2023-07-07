@@ -6,9 +6,9 @@
 
     ## About The Project
 
--   With the means of the acquired data, our team has designed a user
+-   With the means of the acquired data, I Have designed a user
     friendly web-based application to analyse foreign exchange rates.
-    -Our project displays a graph depicting currency exchange rates for
+    -Project displays a graph depicting currency exchange rates for
     the specified time periods, ranging daily, weekly, monthly,
     quarterly, and annually, based on the currencies the user has
     selected.
