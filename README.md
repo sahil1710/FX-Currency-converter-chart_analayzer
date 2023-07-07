@@ -1,6 +1,4 @@
-# TEAM 4 NIRMA UNIVERSITY
-
-## Links
+# Links
 
 -   Github: <https://github.com/sahil1710/team_4_FX-Currency>
 
@@ -57,12 +55,3 @@
     1.  Localhost
     2.  VS Code Live Server
 -   Internet
-
-## Team Members
-
--   Jayneel Mihir Shah \[20BCE105\] : <20bce105@nirmauni.ac.in>
--   Aaryan Brajesh Jha \[20BCE001\] : <20bce001@nirmauni.ac.in>
--   Sahil Bipinkumar Dholakiya \[20BCE250\] : <20bce250@nirmauni.ac.in>
--   Jetani Vishv Jagdishbhai \[20BCE106\] : <20bce106@nirmauni.ac.in>
--   Trushti Selarka \[20BEC131\] : <20bec131@nirmauni.ac.in>
-
