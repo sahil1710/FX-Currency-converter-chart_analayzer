@@ -1,7 +1,5 @@
 # Links
 
--   Github: <https://github.com/sahil1710/team_4_FX-Currency>
-
 -   Hosted Site: <https://fx-currency-nt-t4.netlify.app/>
 
     ## About The Project
